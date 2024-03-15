@@ -58,9 +58,10 @@ def train_classifier_NN(reshaped_X_train, y_train, reshaped_X_test, y_test):
     '''
 # logistic regression 
     clf = MLPClassifier(activation = "logistic",
-                           hidden_layer_sizes = (20,),
+                           hidden_layer_sizes = (88,),
                            max_iter=1000,
-                           random_state = 42).fit(reshaped_X_train, y_train)
+                           random_state = 42, 
+                           verbose = True).fit(reshaped_X_train, y_train)
 
 
      #plot loss curve
